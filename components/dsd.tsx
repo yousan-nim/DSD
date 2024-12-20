@@ -7,7 +7,6 @@ const DSD: React.FC = () => {
     const [videoKey, setVideoKey] = useState<number>(0);
     const [isPlaying, setIsPlaying] = useState<boolean>(true);
     const [isVideoLoaded, setIsVideoLoaded] = useState<boolean>(false);
-    const [mutedVDO, setMuteVDO] = useState<boolean>(true);
     const [transcript, setTranscript] = useState<string | null>(null);
 
     const [activeBtn, setActiveBtn] = useState<number | null>(null);
