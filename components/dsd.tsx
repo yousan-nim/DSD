@@ -7,6 +7,7 @@ const DSD: React.FC = () => {
     const [videoKey, setVideoKey] = useState<number>(0);
     const [isPlaying, setIsPlaying] = useState<boolean>(true);
     const [isVideoLoaded, setIsVideoLoaded] = useState<boolean>(false);
+    const [mutedVDO, setMuteVDO] = useState<boolean>(true);
     const [transcript, setTranscript] = useState<string | null>(null);
 
     const [activeBtn, setActiveBtn] = useState<number | null>(null);
@@ -61,7 +62,7 @@ const DSD: React.FC = () => {
             if (activeBtn === 1) {
                 setActiveBtn(7);
             }
-        }, 20000);
+        }, 60000);
         return () => clearInterval(intervalId);
     }, [activeBtn]);
 
